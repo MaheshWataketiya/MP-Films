@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mp Films</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-black text-white font-sans">
+
+    <!-- Header -->
+    <header class="bg-zinc-900 py-6 text-center text-3xl font-bold tracking-widest">
+      🎬 Mp Films
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-zinc-800 flex justify-center gap-6 py-3 text-gray-300 text-sm">
+      <a href="#home" class="hover:text-white">Home</a>
+      <a href="#films" class="hover:text-white">Films</a>
+      <a href="#upload" class="hover:text-white">Upload</a>
+      <a href="#about" class="hover:text-white">About</a>
+      <a href="#contact" class="hover:text-white">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="h-[300px] bg-cover bg-center flex items-center justify-center text-4xl font-bold text-white shadow-inner" style="background-image: url('https://i.imgur.com/zfF9Lfp.jpg');">
+      Welcome to Mp Films
+    </section>
+
+    <!-- Latest Films -->
+    <section id="films" class="py-12 px-6 max-w-6xl mx-auto">
+      <h2 class="text-2xl font-semibold mb-6">🎥 Latest Films</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-zinc-800 p-4 rounded-xl">
+          <video src="sample.mp4" controls class="rounded-md w-full"></video>
+          <p class="mt-2 text-sm">Title: The Warrior Returns</p>
+        </div>
+        <div class="bg-zinc-800 p-4 rounded-xl">
+          <video src="sample2.mp4" controls class="rounded-md w-full"></video>
+          <p class="mt-2 text-sm">Title: Ancient Legends</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upload Form -->
+    <section id="upload" class="py-12 px-6 max-w-3xl mx-auto">
+      <h2 class="text-2xl font-semibold mb-6">📤 Upload Your Film</h2>
+      <form class="bg-zinc-800 p-6 rounded-xl space-y-4">
+        <input type="text" placeholder="Film Title" required class="w-full p-3 rounded bg-zinc-700 text-white placeholder-gray-400" />
+        <input type="file" accept="video/*" required class="w-full p-3 rounded bg-zinc-700 text-white" />
+        <textarea placeholder="Film Description" rows="4" class="w-full p-3 rounded bg-zinc-700 text-white placeholder-gray-400"></textarea>
+        <button type="submit" class="bg-red-600 hover:bg-red-700 px-6 py-2 rounded text-white font-medium">Upload</button>
+      </form>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-12 px-6 max-w-4xl mx-auto">
+      <h2 class="text-2xl font-semibold mb-4">📚 About Us</h2>
+      <p class="text-gray-300">
+        Mp Films is a platform for showcasing epic short films, AI-generated movies, and creative digital storytelling. Whether you're a filmmaker or a fan, this is your home for visual magic.
+      </p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-12 px-6 max-w-4xl mx-auto">
+      <h2 class="text-2xl font-semibold mb-4">📞 Contact</h2>
+      <p class="text-gray-300">Email: mpfilms@example.com</p>
+      <p class="text-gray-300">Instagram: @mpfilms</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-zinc-900 py-4 text-center text-gray-500 text-sm mt-10">
+      © 2025 Mp Films. All rights reserved.
+    </footer>
+  </body>
+</html>
